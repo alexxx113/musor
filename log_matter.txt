@@ -1,0 +1,60 @@
+QR code:
+
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ ██▀▄▀▄█ ▄▄▄▄▄ █
+█ █   █ █▄▀▄▀▄█ █   █ █
+█ █▄▄▄█ ██ ▀▀▄█ █▄▄▄█ █
+█▄▄▄▄▄▄▄█ █ ▀ █▄▄▄▄▄▄▄█
+█▄  █  ▄▄ █ ▀   ███ █▀█
+█ ▄█ ▄▄▄▄▀▄█▀▄▀▄▀█ ▀█▀█
+█▄▄█▄▄▄▄▄█ █▀▀▀▄▄█▄▀▄▀█
+█ ▄▄▄▄▄ █ ▀ █▀ ▀▀ ▄ █ █
+█ █   █ █▄█▀▄█  ▀▀▄ ▀██
+█ █▄▄▄█ █ ▄█  ▀█▀█  ▀ █
+█▄▄▄▄▄▄▄█▄▄▄▄██▄▄██▄█▄█
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+Matterbridge
+
+qrPairingCode: MT:Y.K90C0R155NHY0N600
+
+Manual pairing code: 20369305027
+ 
+2024-07-21 00:26:34.683 INFO   PaseServer           Received pairing request from udp://fe80::ba87:6eff:fe17:705c%enp1s0:39445.
+2024-07-21 00:26:34.764 INFO   PaseServer           Session 34327 created with udp://fe80::ba87:6eff:fe17:705c%enp1s0:39445.
+2024-07-21 00:26:34.778 INFO   SessionManager       End insecure session insecure/4835596362029531163
+2024-07-21 00:26:34.914 INFO   MatterDevice         Announce done fabric: 1 fabricIndex: 1
+2024-07-21 00:26:34.915 INFO   AttributeServer      Set remote value for fabric scoped attribute "acl" to [{"fabricIndex":1,"privilege":5,"authMode":2,"subjects":["1"],"targets":null}]
+2024-07-21 00:26:34.917 INFO   LegacyInte~ionServer ACL updated { fabricIndex: 1, privilege: 5, authMode: 2, subjects: [ 1 ], targets: null }
+2024-07-21 00:26:34.917 INFO   Operationa~alsServer addNoc success, adminVendorId 5130, caseAdminSubject 1
+2024-07-21 00:26:35.128 INFO   CaseServer           Received pairing request from udp://fe80::ba87:6eff:fe17:705c%enp1s0:39445
+[00:26:35.148] [Matterbridge] Active session changed on fabric 1 id 1 vendor 5130 (unknown)  for Matterbridge { name: 'secure/34328', nodeId: 264, peerNodeId: 1, fabric: { fabricIndex: 1, fabricId: 1, nodeId: 264, rootNodeId: 1, rootVendorId: 5130, label: '' }, isPeerActive: true, secure: true, lastInteractionTimestamp: 1721510795148, lastActiveTimestamp: 1721510795148, numberOfActiveSubscriptions: 0 } 
+2024-07-21 00:26:35.149 INFO   CaseServer           session 34328 created with udp://fe80::ba87:6eff:fe17:705c%enp1s0:39445 for Fabric 0000000000000108(index 1) and PeerNode 0000000000000001
+2024-07-21 00:26:35.173 INFO   MatterDevice         All announcements expired
+2024-07-21 00:26:35.173 INFO   SecureSession        Register Session secure/34327 to send a close when exchange is ended.
+2024-07-21 00:26:35.174 INFO   GeneralCom~erHandler Commissioning completed on fabric #1 as node #264.
+2024-07-21 00:26:35.175 INFO   SessionManager       End insecure session insecure/17156052148020655464
+2024-07-21 00:26:35.231 INFO   SecureSession        Register Session secure/34328 to send a close when exchange is ended.
+2024-07-21 00:26:35.232 INFO   MatterDevice         All announcements expired
+2024-07-21 00:26:35.280 ERROR  InteractionServer    Subscription 2718942445 for Session 34328: Error while sending initial data reports EndOfStreamError
+    at Queue.close (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/util/Queue.js:51:31)
+    at MessageExchange.closeInternal (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/MessageExchange.js:377:24)
+    at MessageExchange.destroy (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/MessageExchange.js:318:16)
+    at ExchangeManager.closeSession (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/ExchangeManager.js:236:24)
+    at async ExchangeManager.deleteExchange (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/ExchangeManager.js:217:9)
+    at async MessageExchange.closeCallback (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/ExchangeManager.js:169:23)
+    at async MessageExchange.closeInternal (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/MessageExchange.js:378:5)
+    at async InteractionServerMessenger.handleRequest (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/interaction/InteractionMessenger.js:165:7)
+    at async LegacyInteractionServer.onNewExchange (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/interaction/InteractionServer.js:141:5)
+    at async ExchangeManager.onMessage (file:///usr/local/lib/node_modules/matterbridge/node_modules/@project-chip/matter.js/dist/esm/protocol/ExchangeManager.js:173:9)
+2024-07-21 00:26:35.282 INFO   ExchangeManager      Exchange with index 46505 to delete not found or already deleted.
+2024-07-21 00:26:35.282 INFO   ExchangeManager      Exchange with index 46505 to delete not found or already deleted.
+2024-07-21 00:26:35.282 INFO   SessionManager       End CASE session secure/34328
+2024-07-21 00:26:35.371 INFO   ExchangeManager      Exchange with index 89234 to delete not found or already deleted.
+2024-07-21 00:26:35.371 INFO   SessionManager       End PASE session secure/34327
+2024-07-21 00:26:35.418 INFO   CommissioningServer  The device was factory reset and restarted.
+[00:26:35.419] [Matterbridge] Commissioning removed from fabric 1 for Matterbridge. Resetting the commissioning server ... 
+2024-07-21 00:26:35.546 INFO   MatterDevice         All announcements expired
+2024-07-21 00:26:35.591 INFO   CommissioningServer  The device was factory reset and restarted.
+[00:26:35.591] [Matterbridge] Restart to activate the pairing for Matterbridge. 
+[00:27:03.584] [Matterbridge] Setting reachability to true for Matterbridge 
